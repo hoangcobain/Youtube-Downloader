@@ -261,7 +261,7 @@ export async function POST(request: NextRequest) {
 
 // Update to new configuration format
 export const dynamic = 'force-dynamic';
-export const maxDuration = 300; // 5 minutes max duration
+export const maxDuration = 60; // Set to 60 seconds to comply with Vercel hobby plan limit
 export const fetchCache = 'force-no-store';
 
 // Configure higher response size limit for larger videos
