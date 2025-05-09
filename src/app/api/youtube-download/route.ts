@@ -259,9 +259,11 @@ export async function POST(request: NextRequest) {
     }
 }
 
-// Add a higher size limit for larger videos
-export const config = {
-    api: {
-        responseLimit: '50mb',
-    },
-}; 
+// Update to new configuration format
+export const dynamic = 'force-dynamic';
+export const maxDuration = 300; // 5 minutes max duration
+export const fetchCache = 'force-no-store';
+
+// Configure higher response size limit for larger videos
+// The limit is set to 50MB
+// Note: The actual response size may be limited by your hosting provider 

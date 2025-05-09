@@ -51,6 +51,7 @@ export function useToast() {
 
   return {
     toastState: state,
+    toast: toast,
   };
 }
 

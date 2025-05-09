@@ -52,9 +52,3 @@ export function ToastProvider() {
     </div>
   );
 }
-
-// Update the toast reference with the actual implementation
-export function initializeToast() {
-  const { toast: toastFn } = useToast();
-  toast.toast = toastFn;
-}
